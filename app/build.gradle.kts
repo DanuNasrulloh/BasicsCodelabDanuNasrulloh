@@ -1,16 +1,16 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application") version "8.13.0"
+    id("org.jetbrains.kotlin.android") version "1.9.0"
 }
 
 android {
     namespace = "com.example.basicscodelab"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.basicscodelab"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
